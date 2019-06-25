@@ -55,7 +55,7 @@
         <!--AnjaliViewFinder-->
         <scene sceneID="YoQ-y9-ldw">
             <objects>
-                <tableViewController id="Nbk-15-nmg" sceneMemberID="viewController">
+                <tableViewController id="Nbk-15-nmg" customClass="PostTableViewController" customModule="AnjaliViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wug-WC-Rb5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +103,9 @@
                                 <state key="normal" title="Camera">
                                     <color key="titleColor" red="0.1127282334" green="0.26496502300000002" blue="0.53170605959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="selfieButtonTapped:" destination="013-KL-4Jz" eventType="touchUpInside" id="Vdu-gX-cgr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxE-1Y-Gk3">
                                 <rect key="frame" x="270" y="643" width="82" height="34"/>
@@ -111,6 +114,9 @@
                                 <state key="normal" title="Library">
                                     <color key="titleColor" red="0.1127282334" green="0.26496502300000002" blue="0.53170605959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="libraryButtonTapped:" destination="013-KL-4Jz" eventType="touchUpInside" id="wBX-z9-eYY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-Un-WGB">
                                 <rect key="frame" x="28" y="486" width="357" height="30"/>
@@ -130,12 +136,20 @@
                                 <state key="normal" title="Save this Photo">
                                     <color key="titleColor" red="0.98220921319999999" green="0.19344311419999999" blue="0.051677236760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="013-KL-4Jz" eventType="touchUpInside" id="AXJ-92-KQt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79045713704249576" green="0.79045713704249576" blue="0.79045713704249576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="J0u-dF-8MP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="1nL-Od-fHU"/>
+                    <connections>
+                        <outlet property="captionText" destination="4Ps-Un-WGB" id="25x-Ky-UWc"/>
+                        <outlet property="imageView" destination="8BS-Cq-mUS" id="d4u-h1-MwJ"/>
+                        <outlet property="newImage" destination="8BS-Cq-mUS" id="sgF-1D-GMG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T6-kL-Qth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

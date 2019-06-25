@@ -13,6 +13,7 @@
 		18C5AC4622C26E5000FCC0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C5AC4522C26E5000FCC0C6 /* Assets.xcassets */; };
 		18C5AC4922C26E5000FCC0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C5AC4722C26E5000FCC0C6 /* LaunchScreen.storyboard */; };
 		18C5AC5122C2797A00FCC0C6 /* NewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5AC5022C2797A00FCC0C6 /* NewPhotoViewController.swift */; };
+		18C5AC5322C29F9100FCC0C6 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5AC5222C29F9100FCC0C6 /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18C5AC4822C26E5000FCC0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C5AC4A22C26E5000FCC0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C5AC5022C2797A00FCC0C6 /* NewPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhotoViewController.swift; sourceTree = "<group>"; };
+		18C5AC5222C29F9100FCC0C6 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				18C5AC3B22C26E4F00FCC0C6 /* AppDelegate.swift */,
 				18C5AC3F22C26E4F00FCC0C6 /* Main.storyboard */,
 				18C5AC5022C2797A00FCC0C6 /* NewPhotoViewController.swift */,
+				18C5AC5222C29F9100FCC0C6 /* PostTableViewController.swift */,
 				18C5AC4522C26E5000FCC0C6 /* Assets.xcassets */,
 				18C5AC4722C26E5000FCC0C6 /* LaunchScreen.storyboard */,
 				18C5AC4A22C26E5000FCC0C6 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C5AC3C22C26E4F00FCC0C6 /* AppDelegate.swift in Sources */,
+				18C5AC5322C29F9100FCC0C6 /* PostTableViewController.swift in Sources */,
 				18C5AC5122C2797A00FCC0C6 /* NewPhotoViewController.swift in Sources */,
 				18C5AC4422C26E4F00FCC0C6 /* AnjaliViewFinder.xcdatamodeld in Sources */,
 			);
